@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "63JpwW0tqQ4jxiOKPAC09wThzLEbqy7pfnHukOKNo9WKGYKUhXLIGfCX/8s3cMu6T2CfiBP2F6bsLO3sw+Wc2Q==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.API\\RealTimeChatApp.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP1\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\HP1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
