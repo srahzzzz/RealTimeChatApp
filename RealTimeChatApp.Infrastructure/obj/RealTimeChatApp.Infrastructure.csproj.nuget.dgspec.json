@@ -4,14 +4,73 @@
     "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj": {
+    "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\RealTimeChatApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj",
-        "projectName": "RealTimeChatApp.Infrastructure",
-        "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\RealTimeChatApp.Application.csproj",
+        "projectName": "RealTimeChatApp.Application",
+        "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\RealTimeChatApp.Application.csproj",
         "packagesPath": "C:\\Users\\HP1\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\obj\\",
+        "outputPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\RealTimeChatApp.Domain.csproj": {
+                "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\RealTimeChatApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\RealTimeChatApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\RealTimeChatApp.Domain.csproj",
+        "projectName": "RealTimeChatApp.Domain",
+        "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\RealTimeChatApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\HP1\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +98,83 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj",
+        "projectName": "RealTimeChatApp.Infrastructure",
+        "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\RealTimeChatApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\HP1\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\RealTimeChatApp.Application.csproj": {
+                "projectPath": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.Application\\RealTimeChatApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

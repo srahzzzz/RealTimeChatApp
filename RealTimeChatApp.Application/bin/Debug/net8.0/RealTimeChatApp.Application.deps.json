@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RealTimeChatApp.Application/1.0.0": {
+        "dependencies": {
+          "RealTimeChatApp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "RealTimeChatApp.Application.dll": {}
+        }
+      },
+      "RealTimeChatApp.Domain/1.0.0": {
+        "runtime": {
+          "RealTimeChatApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RealTimeChatApp.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealTimeChatApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
