@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    platform: linux/amd64
+    container_name: chatapp-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: ChatAppDb
+    ports:
+      - "5432:5432"

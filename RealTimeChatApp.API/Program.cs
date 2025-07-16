@@ -5,7 +5,13 @@ using RealTimeChatApp.Infrastructure.Services;
 using RealTimeChatApp.Infrastructure.Settings;
 using System.Text;
 
+using RealTimeChatApp.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ✅ Add controller support
 builder.Services.AddControllers(); // 🔧 REQUIRED for [ApiController]s to work
