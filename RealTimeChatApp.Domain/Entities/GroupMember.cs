@@ -8,6 +8,9 @@ namespace RealTimeChatApp.Domain.Entities
         public Guid GroupId { get; set; }
         public Group Group { get; set; }
 
-        public bool IsApproved { get; set; } = false;
+        public DateTime JoinedAt { get; set; }
+        public bool IsAdmin { get; set; }
+        public bool IsApproved { get; set; }
     }
+
 }

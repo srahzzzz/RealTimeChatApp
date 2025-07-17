@@ -1230,8 +1230,10 @@
       "RealTimeChatApp.Infrastructure/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
+          "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.Extensions.Options": "9.0.7",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.7",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "RealTimeChatApp.Application": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.12.1"
         },

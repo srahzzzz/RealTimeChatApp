@@ -16,3 +16,5 @@ D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\obj\Debug\net8.0\refint\RealTimeChatApp.Infrastructure.dll
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\obj\Debug\net8.0\RealTimeChatApp.Infrastructure.pdb
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\obj\Debug\net8.0\ref\RealTimeChatApp.Infrastructure.dll
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\bin\Debug\net8.0\RealTimeChatApp.Infrastructure.runtimeconfig.json
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Infrastructure\obj\Debug\net8.0\RealTimeChatApp.Infrastructure.genruntimeconfig.cache
