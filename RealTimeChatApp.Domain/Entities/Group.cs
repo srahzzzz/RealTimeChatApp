@@ -7,5 +7,10 @@ namespace RealTimeChatApp.Domain.Entities
         public bool IsPrivate { get; set; }
 
         public ICollection<GroupMember> Members { get; set; }
+        public Guid OwnerId { get; set; }
+        public User Owner { get; set; }
+
+        public ICollection<GroupInvite> Invites { get; set; }
     }
+
 }

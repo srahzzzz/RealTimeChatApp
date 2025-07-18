@@ -8,6 +8,7 @@ namespace RealTimeChatApp.Infrastructure.Persistence
         public DbSet<User> Users { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<GroupMember> GroupMembers { get; set; }
+        public DbSet<GroupInvite> GroupInvites { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
@@ -34,6 +35,41 @@ namespace RealTimeChatApp.Infrastructure.Persistence
                 .HasOne(gm => gm.Group)
                 .WithMany(g => g.Members)
                 .HasForeignKey(gm => gm.GroupId);
+
+            modelBuilder.Entity<GroupMember>()
+                   .HasOne(gm => gm.User)
+                   .WithMany()
+                   .HasForeignKey(gm => gm.UserId);
+
+
+
+
+            // Group ownership
+            modelBuilder.Entity<Group>()
+                .HasOne(g => g.Owner)
+                .WithMany()
+                .HasForeignKey(g => g.OwnerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+
+            // Group invites
+            modelBuilder.Entity<GroupInvite>()
+                .HasOne(i => i.Group)
+                .WithMany(g => g.Invites)
+                .HasForeignKey(i => i.GroupId);
+
+            modelBuilder.Entity<GroupInvite>()
+                .HasOne(i => i.InvitedUser)
+                .WithMany()
+                .HasForeignKey(i => i.InvitedUserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<GroupInvite>()
+                .HasOne(i => i.InvitedByUser)
+                .WithMany()
+                .HasForeignKey(i => i.InvitedByUserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
