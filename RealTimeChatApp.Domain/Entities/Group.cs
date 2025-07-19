@@ -11,6 +11,7 @@ namespace RealTimeChatApp.Domain.Entities
         public User Owner { get; set; }
 
         public ICollection<GroupInvite> Invites { get; set; }
+        public ICollection<Message> Messages { get; set; }
     }
 
 }

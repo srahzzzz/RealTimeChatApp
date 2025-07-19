@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="CloudinaryDotNet" Version="1.27.6" />
+  </ItemGroup>
+</Project>

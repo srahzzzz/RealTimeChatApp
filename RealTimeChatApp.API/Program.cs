@@ -3,12 +3,19 @@ using Microsoft.IdentityModel.Tokens;
 using RealTimeChatApp.Application.Interfaces;
 using RealTimeChatApp.Infrastructure.Services;
 using RealTimeChatApp.Infrastructure.Settings;
+using Microsoft.Extensions.FileProviders;
+using RealTimeChatApp.Domain.Entities;
 using System.Text;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 
 using RealTimeChatApp.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -40,6 +47,7 @@ builder.Services.AddAuthentication("Bearer")
     });
 
 builder.Services.AddAuthorization();
+
 
 // Swagger & OpenAPI
 builder.Services.AddEndpointsApiExplorer();
@@ -73,7 +81,53 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
+
+// Make sure it loads configuration from appsettings.json
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+// Bind CloudinarySettings
+builder.Services.Configure<CloudinarySettings>(
+    builder.Configuration.GetSection("Cloudinary"));
+
+
+    var cloudinarySettings = builder.Configuration.GetSection("Cloudinary").Get<CloudinarySettings>();
+
+
+if (cloudinarySettings == null)
+    Console.WriteLine("=== DEBUG: Dumping appsettings.json Cloudinary section ===");
+    Console.WriteLine(builder.Configuration.GetSection("Cloudinary").Value ?? "Section is NULL");
+    Console.WriteLine("CloudName: " + builder.Configuration.GetSection("Cloudinary:CloudName").Value);
+    Console.WriteLine("ApiKey: " + builder.Configuration.GetSection("Cloudinary:ApiKey").Value);
+    Console.WriteLine("ApiSecret: " + builder.Configuration.GetSection("Cloudinary:ApiSecret").Value);
+
+
+var account = new Account(
+    cloudinarySettings.CloudName,
+    cloudinarySettings.ApiKey,
+    cloudinarySettings.ApiSecret);
+
+var cloudinary = new Cloudinary(account);
+builder.Services.AddSingleton(cloudinary);
+
+
+
 var app = builder.Build();
+
+var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles");
+
+if (!Directory.Exists(uploadPath))
+{
+    Directory.CreateDirectory(uploadPath);
+}
+
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles")),
+    RequestPath = "/UploadedFiles"
+});
+
 
 if (app.Environment.IsDevelopment())
 {

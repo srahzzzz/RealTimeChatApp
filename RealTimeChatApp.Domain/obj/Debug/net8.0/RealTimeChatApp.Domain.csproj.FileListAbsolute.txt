@@ -1,6 +1,7 @@
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\bin\Debug\net8.0\RealTimeChatApp.Domain.deps.json
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\bin\Debug\net8.0\RealTimeChatApp.Domain.dll
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\bin\Debug\net8.0\RealTimeChatApp.Domain.pdb
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\obj\Debug\net8.0\RealTimeChatApp.Domain.csproj.AssemblyReference.cache
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\obj\Debug\net8.0\RealTimeChatApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\obj\Debug\net8.0\RealTimeChatApp.Domain.AssemblyInfoInputs.cache
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.Domain\obj\Debug\net8.0\RealTimeChatApp.Domain.AssemblyInfo.cs

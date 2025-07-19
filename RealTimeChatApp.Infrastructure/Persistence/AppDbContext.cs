@@ -10,6 +10,9 @@ namespace RealTimeChatApp.Infrastructure.Persistence
         public DbSet<GroupMember> GroupMembers { get; set; }
         public DbSet<GroupInvite> GroupInvites { get; set; }
 
+        public DbSet<Message> Messages { get; set; }
+
+
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
 
@@ -70,6 +73,18 @@ namespace RealTimeChatApp.Infrastructure.Persistence
                 .WithMany()
                 .HasForeignKey(i => i.InvitedByUserId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // messages
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.Group)
+                .WithMany(g => g.Messages)
+                .HasForeignKey(m => m.GroupId);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.Sender)
+                .WithMany()
+                .HasForeignKey(m => m.SenderId);
+
         }
     }
 }
