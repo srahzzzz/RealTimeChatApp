@@ -16,6 +16,7 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.0",
           "Microsoft.AspNetCore.SignalR": "1.2.0",
+          "Microsoft.AspNetCore.SignalR.StackExchangeRedis": "8.0.6",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.Design": "9.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.7",
@@ -24,7 +25,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "RealTimeChatApp.Application": "1.0.0",
           "RealTimeChatApp.Infrastructure": "1.0.0",
-          "StackExchange.Redis": "2.8.41",
+          "StackExchange.Redis": "2.8.47",
           "Swashbuckle.AspNetCore": "9.0.3"
         },
         "runtime": {
@@ -122,6 +123,27 @@
           "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.1.0.0"
+          }
+        }
+      },
+      "MessagePack/2.5.108": {
+        "dependencies": {
+          "MessagePack.Annotations": "2.5.108",
+          "Microsoft.NET.StringTools": "17.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MessagePack.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.108.51978"
+          }
+        }
+      },
+      "MessagePack.Annotations/2.5.108": {
+        "runtime": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.108.51978"
           }
         }
       },
@@ -280,6 +302,19 @@
           "Microsoft.AspNetCore.SignalR.Common": "1.2.0",
           "Newtonsoft.Json": "13.0.3",
           "System.IO.Pipelines": "9.0.7"
+        }
+      },
+      "Microsoft.AspNetCore.SignalR.StackExchangeRedis/8.0.6": {
+        "dependencies": {
+          "MessagePack": "2.5.108",
+          "Microsoft.Extensions.Options": "9.0.7",
+          "StackExchange.Redis": "2.8.47"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.SignalR.StackExchangeRedis.dll": {
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26909"
+          }
         }
       },
       "Microsoft.AspNetCore.WebSockets/2.3.0": {
@@ -909,6 +944,18 @@
           "System.Buffers": "4.6.0"
         }
       },
+      "Microsoft.NET.StringTools/17.4.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.NET.StringTools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "17.4.0.51802"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.1.3": {},
       "Microsoft.OpenApi/1.6.23": {
@@ -1066,7 +1113,7 @@
           }
         }
       },
-      "StackExchange.Redis/2.8.41": {
+      "StackExchange.Redis/2.8.47": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "9.0.7",
           "Pipelines.Sockets.Unofficial": "2.2.8"
@@ -1074,7 +1121,7 @@
         "runtime": {
           "lib/net8.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.8.41.44383"
+            "fileVersion": "2.8.47.35410"
           }
         }
       },
@@ -1724,6 +1771,20 @@
       "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
       "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
     },
+    "MessagePack/2.5.108": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kcVRbdWP3xNWLZmmpm4DFO+kuXf6mUR2mHZ27WoZIEFIv9hazuUd80injXhNrZnlq/FklAdCsLOil5M76I4Ndg==",
+      "path": "messagepack/2.5.108",
+      "hashPath": "messagepack.2.5.108.nupkg.sha512"
+    },
+    "MessagePack.Annotations/2.5.108": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-28aNCvfJClgwaKr26gf2S6LT+C1PNyPxiG+ihYpy8uCJsRLJEDoCt2I0Uk5hqOPQ8P8hI0ESy520oMkZkPmsOQ==",
+      "path": "messagepack.annotations/2.5.108",
+      "hashPath": "messagepack.annotations.2.5.108.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1863,6 +1924,13 @@
       "sha512": "sha512-hNvZ7kQxp5Udqd/IFWViU35bUJvi4xnNzjkF28HRvrdrS7JNsIASTvMqArP6HLQUc3j6nlUOeShNhVmgI1wzHg==",
       "path": "microsoft.aspnetcore.signalr.protocols.json/1.2.0",
       "hashPath": "microsoft.aspnetcore.signalr.protocols.json.1.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR.StackExchangeRedis/8.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T7cNzhSiY22BBmhZqGeu+ynYvNxl2rHH2iGUOULcEHRiY+Mt1APpJ/Mp05y54Zq7Zg34F13ypSoYL5Uku/23hA==",
+      "path": "microsoft.aspnetcore.signalr.stackexchangeredis/8.0.6",
+      "hashPath": "microsoft.aspnetcore.signalr.stackexchangeredis.8.0.6.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebSockets/2.3.0": {
       "type": "package",
@@ -2158,6 +2226,13 @@
       "path": "microsoft.net.http.headers/2.3.0",
       "hashPath": "microsoft.net.http.headers.2.3.0.nupkg.sha512"
     },
+    "Microsoft.NET.StringTools/17.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-06T6Hqfs3JDIaBvJaBRFFMIdU7oE0OMab5Xl8LKQjWPxBQr3BgVFKMQPTC+GsSEuYREWmK6g5eOd7Xqd9p1YCA==",
+      "path": "microsoft.net.stringtools/17.4.0",
+      "hashPath": "microsoft.net.stringtools.17.4.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2354,12 +2429,12 @@
       "path": "snappier/1.0.0",
       "hashPath": "snappier.1.0.0.nupkg.sha512"
     },
-    "StackExchange.Redis/2.8.41": {
+    "StackExchange.Redis/2.8.47": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EgtQzlucry9V2Gces1K19Xi8Sz/8DfoZlGQEmL/hSM/SXO/ucDS5RPmLzcmT489ZNGFbj9CGhlpscPLOXtYWwA==",
-      "path": "stackexchange.redis/2.8.41",
-      "hashPath": "stackexchange.redis.2.8.41.nupkg.sha512"
+      "sha512": "sha512-NUf2lhtZuBRLZEwoOH8ocfn7eDMjQkwP1KM5LbBi4dbEVSKs9GMJ34VtOntzPqmvWfk/wWi5MfBcAmU3HSujpg==",
+      "path": "stackexchange.redis/2.8.47",
+      "hashPath": "stackexchange.redis.2.8.47.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/9.0.3": {
       "type": "package",

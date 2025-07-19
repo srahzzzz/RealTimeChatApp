@@ -170,3 +170,8 @@ D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\obj\Debug\n
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\obj\Debug\net8.0\RealTimeChatApp.API.pdb
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\obj\Debug\net8.0\RealTimeChatApp.API.genruntimeconfig.cache
 D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\obj\Debug\net8.0\ref\RealTimeChatApp.API.dll
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\bin\Debug\net8.0\RealTimeChatApp.API.staticwebassets.runtime.json
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\bin\Debug\net8.0\MessagePack.dll
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\bin\Debug\net8.0\MessagePack.Annotations.dll
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.StackExchangeRedis.dll
+D:\Users\HP1\internshipBluesense\RealTimeChatApp\RealTimeChatApp.API\bin\Debug\net8.0\Microsoft.NET.StringTools.dll

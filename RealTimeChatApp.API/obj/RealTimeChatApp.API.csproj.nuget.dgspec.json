@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[1.2.0, )"
             },
+            "Microsoft.AspNetCore.SignalR.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.7, )"
@@ -109,7 +113,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.8.41, )"
+              "version": "[2.8.47, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

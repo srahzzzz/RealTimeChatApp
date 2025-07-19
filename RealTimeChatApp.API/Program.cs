@@ -9,6 +9,12 @@ using System.Text;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 
+using Microsoft.AspNetCore.SignalR;
+using RealTimeChatApp.API.Hubs;
+using StackExchange.Redis;
+using Microsoft.AspNetCore.SignalR.StackExchangeRedis;
+
+
 using RealTimeChatApp.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,7 +27,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ✅ Add controller support
-builder.Services.AddControllers(); // 🔧 REQUIRED for [ApiController]s to work
+builder.Services.AddControllers(); // REQUIRED for [ApiController]s to work
+
+builder.Services.AddSignalR()
+    .AddStackExchangeRedis("redis:6379", options =>
+    {
+        options.Configuration.ChannelPrefix = "ChatApp"; // Optional: helps namespace pub/sub
+    });
+
+
+
+// Redis Connection
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var config = ConfigurationOptions.Parse("redis:6379", true);
+    return ConnectionMultiplexer.Connect(config);
+});
+
 
 // Register JwtSettings from appsettings.json
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
@@ -94,11 +116,13 @@ builder.Services.Configure<CloudinarySettings>(
 
 
 if (cloudinarySettings == null)
+{
     Console.WriteLine("=== DEBUG: Dumping appsettings.json Cloudinary section ===");
     Console.WriteLine(builder.Configuration.GetSection("Cloudinary").Value ?? "Section is NULL");
     Console.WriteLine("CloudName: " + builder.Configuration.GetSection("Cloudinary:CloudName").Value);
     Console.WriteLine("ApiKey: " + builder.Configuration.GetSection("Cloudinary:ApiKey").Value);
     Console.WriteLine("ApiSecret: " + builder.Configuration.GetSection("Cloudinary:ApiSecret").Value);
+}
 
 
 var account = new Account(
@@ -112,6 +136,7 @@ builder.Services.AddSingleton(cloudinary);
 
 
 var app = builder.Build();
+app.UseStaticFiles(); // enable serving wwwroot files
 
 var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles");
 
@@ -136,11 +161,27 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials()
+            .SetIsOriginAllowed(_ => true); // Replace with allowed frontend domain in production
+    });
+});
+
+app.UseCors();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 // ✅ Map controller endpoints
 app.MapControllers(); // 🔧 This enables AuthController, etc.
+app.MapHub<ChatHub>("/chat");
 
 // Optional: Keep test WeatherForecast endpoint
 app.MapGet("/weatherforecast", () =>
@@ -156,6 +197,9 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+
+
 
 app.Run();
 

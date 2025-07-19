@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "Jke0IUOlZ8PxPOwwJQMNBcqgiCXdswdMra6rPfklTjw=",
+  "Hash": "2lNY/rRuTPWtZqZyEh/PNe/eTIseQjuuYFV2zDYNHec=",
   "Source": "RealTimeChatApp.API",
   "BasePath": "_content/RealTimeChatApp.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "RealTimeChatApp.API\\wwwroot",
+      "Source": "RealTimeChatApp.API",
+      "ContentRoot": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.API\\wwwroot\\",
+      "BasePath": "_content/RealTimeChatApp.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.API\\wwwroot\\signalr-test.html",
+      "SourceId": "RealTimeChatApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.API\\wwwroot\\",
+      "BasePath": "_content/RealTimeChatApp.API",
+      "RelativePath": "signalr-test.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\signalr-test.html"
+    }
+  ]
 }

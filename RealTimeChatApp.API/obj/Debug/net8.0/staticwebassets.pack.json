@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Users\\HP1\\internshipBluesense\\RealTimeChatApp\\RealTimeChatApp.API\\wwwroot\\signalr-test.html",
+      "PackagePath": "staticwebassets\\signalr-test.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RealTimeChatApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RealTimeChatApp.API.props",
+      "PackagePath": "build\\RealTimeChatApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RealTimeChatApp.API.props",
+      "PackagePath": "buildMultiTargeting\\RealTimeChatApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RealTimeChatApp.API.props",
+      "PackagePath": "buildTransitive\\RealTimeChatApp.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
