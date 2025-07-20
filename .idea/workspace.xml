@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b7aab3b8-da41-4bff-a654-dd3ddf6962d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RealTimeChatApp.API/Controllers/HealthCheckController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RealTimeChatApp.Tests/CustomWebApplicationFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RealTimeChatApp.Tests/MessageIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RealTimeChatApp.Tests/TestAuthHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/Controllers/MessageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/Controllers/MessageController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/RealTimeChatApp.API.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/ref/RealTimeChatApp.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/ref/RealTimeChatApp.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/refint/RealTimeChatApp.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.API/obj/Debug/net8.0/refint/RealTimeChatApp.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/RealTimeChatApp.Application.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/ref/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/ref/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/refint/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Application/obj/Debug/net8.0/refint/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/RealTimeChatApp.Domain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/ref/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/ref/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/refint/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Domain/obj/Debug/net8.0/refint/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/bin/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/RealTimeChatApp.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/ref/RealTimeChatApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/ref/RealTimeChatApp.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/refint/RealTimeChatApp.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeChatApp.Infrastructure/obj/Debug/net8.0/refint/RealTimeChatApp.Infrastructure.dll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "main",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

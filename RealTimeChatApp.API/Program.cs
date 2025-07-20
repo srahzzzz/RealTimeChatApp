@@ -8,6 +8,7 @@ using RealTimeChatApp.Domain.Entities;
 using System.Text;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
+using Microsoft.AspNetCore.Authentication;
 
 using Microsoft.AspNetCore.SignalR;
 using RealTimeChatApp.API.Hubs;
@@ -20,11 +21,33 @@ using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+if (!builder.Environment.IsEnvironment("Testing"))
+{
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+}
+else
+{
+    // Optionally do nothing or configure in-memory here for tests (optional)
+}
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials()
+            .SetIsOriginAllowed(_ => true); // Replace with allowed frontend domain in production
+    });
+});
+
+
+
 
 // ✅ Add controller support
 builder.Services.AddControllers(); // REQUIRED for [ApiController]s to work
@@ -145,6 +168,11 @@ if (!Directory.Exists(uploadPath))
     Directory.CreateDirectory(uploadPath);
 }
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseStaticFiles(new StaticFileOptions
 {
@@ -162,19 +190,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-builder.Services.AddCors(options =>
+// Only call UseCors if not running under test
+if (!app.Environment.IsEnvironment("IntegrationTesting"))
 {
-    options.AddDefaultPolicy(policy =>
-    {
-        policy
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials()
-            .SetIsOriginAllowed(_ => true); // Replace with allowed frontend domain in production
-    });
-});
+    app.UseCors("AllowAll");
+}
 
-app.UseCors();
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -199,11 +220,19 @@ app.MapGet("/weatherforecast", () =>
 .WithOpenApi();
 
 
+app.MapGet("/healthcheck/ping", () => "pong");
 
-
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers(); // Maps all controllers including your Message and HealthCheck controllers
+});
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+public partial class Program { }
+

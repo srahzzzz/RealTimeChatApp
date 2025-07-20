@@ -214,6 +214,43 @@ namespace RealTimeChatApp.API.Controllers
             return File(fileBytes, "application/octet-stream", fileName);
         }
 
+        //pagination
+        [HttpGet]
+            public async Task<IActionResult> GetMessages(
+                Guid groupId,
+                int page = 1,
+                int pageSize = 20,
+                string? search = null)
+            {
+                var query = _context.Messages
+                    .Where(m => m.GroupId == groupId && !m.IsDeleted);
+
+                if (!string.IsNullOrWhiteSpace(search))
+                {
+                    query = query.Where(m =>
+                        EF.Functions.ILike(m.Content, $"%{search}%"));
+                }
+
+                var totalCount = await query.CountAsync();
+
+                var messages = await query
+                    .OrderByDescending(m => m.SentAt)
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    totalCount,
+                    messages
+                });
+            }
+
+            [HttpGet("ping")]
+            [AllowAnonymous]
+            public IActionResult Ping() => Ok("pong");
+
+
 
     }
 }

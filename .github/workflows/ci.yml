@@ -1,0 +1,64 @@
+name: CI Pipeline
+
+on:
+  # Trigger the pipeline when pushing or creating a pull request to the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu for the CI environment
+
+    steps:
+      # Step 1: Checkout the code from the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Setup .NET SDK version
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'  # You can replace this with the version you use
+
+      # Step 3: Restore dependencies (restore the NuGet packages)
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Step 4: Build the project
+      - name: Build the project
+        run: dotnet build --no-restore  # --no-restore to avoid re-restore, as it's already done
+
+      # Step 5: Run unit tests
+      - name: Run tests
+        run: dotnet test --no-build --verbosity normal  # Test the code without rebuilding
+
+      # Step 6: Lint the code (Ensure code formatting)
+      - name: Lint the code
+        run: dotnet format --check  # Check the code formatting using dotnet format
+
+      # Step 7: Docker Login using the combined secret
+      - name: Docker Login
+        run: |
+          echo "${{ secrets.DOCKER_CREDENTIALS }}" | grep -oP 'DOCKER_USERNAME=\K.*' > $HOME/.docker/config.json
+          echo "${{ secrets.DOCKER_CREDENTIALS }}" | grep -oP 'DOCKER_PASSWORD=\K.*' > $HOME/.docker/config.json
+          docker login -u $(echo "${{ secrets.DOCKER_CREDENTIALS }}" | grep -oP 'DOCKER_USERNAME=\K.*') -p $(echo "${{ secrets.DOCKER_CREDENTIALS }}" | grep -oP 'DOCKER_PASSWORD=\K.*')
+
+      # Step 8: Build Docker Image
+      - name: Build Docker Image
+        run: |
+          docker build -t yourdockerhubusername/chat-backend .
+
+      # Step 9: Push Docker Image to Docker Hub
+      - name: Push Docker Image to Docker Hub
+        run: |
+          docker push yourdockerhubusername/chat-backend
+
+      # Optional Step 10: Deploy to cloud service (e.g., Cloudinary, AWS, Azure, or Heroku)
+      - name: Deploy to Cloud (Optional)
+        run: |
+          echo "Deploy step (if applicable)"
+          # You can include your cloud deployment commands here (e.g., using AWS CLI, Azure CLI)
