@@ -177,10 +177,5 @@ Example configuration:
 
 This **Real-Time Chat Backend** is a scalable solution built with **ASP.NET Core**, **PostgreSQL**, **Redis**, **SignalR**, and **Cloudinary**. It supports features like group creation, message sending/editing, file uploads, and real-time communication. Docker and CI/CD integration ensure smooth deployment and scalability. The architecture follows the **Onion Architecture** to ensure maintainability and testability.
 
-```
 
----
-
-Now you can **copy** this markdown, paste it into your `README.md` file, and you're all set! Let me know if you'd like further tweaks or help with any remaining tasks.
-```
 
